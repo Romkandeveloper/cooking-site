@@ -1,0 +1,68 @@
+.recept{
+    &__img{
+        img{
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+        }
+    }
+    &__name{
+        font-size: 50px;
+        margin-left: -30px;
+        @media screen and (max-width: 650px){
+            margin-left: 0;
+            font-size: 40px;
+            text-align: center;
+        }
+        @media screen and (max-width: 450px){
+            font-size: 30px;
+        }
+    }
+    &__info{
+        padding-left: 30px;
+        @media screen and (max-width: 650px){
+            padding-left: 0;
+        }
+    }
+    &__title-list{
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 25px;
+        @media screen and (max-width: 650px){
+            text-align: center;
+        }
+        @media screen and (max-width: 450px){
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+    }
+    &__ingridients{
+        @media screen and (max-width: 650px){
+            text-align: center;
+        }
+        &-item{
+            display: block;
+            font-size: 20px;
+            padding: 3px 10px;
+            border-bottom: 1px solid #eeeeee;
+            @media screen and (max-width: 650px){
+                font-size: 17px;
+            }
+        }
+    }
+    &__steps{
+        padding-left: 30px;
+        @media screen and (max-width: 450px){
+            text-align: justify;
+        }
+        &-item{
+            padding: 3px 10px;
+            font-size: 20px;
+            @media screen and (max-width: 650px){
+                font-size: 17px;
+            }
+        }
+    }
+}
